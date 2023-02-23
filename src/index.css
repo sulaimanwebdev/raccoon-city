@@ -2,11 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Extralight";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashGrotesk-Extralight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashGrotesk-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Regular";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Medium";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashGrotesk-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Semibold";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashGrotesk-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bold";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashGrotesk-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ClashDisplay-Semibold";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/ClashDisplay-Semibold.otf") format("opentype");
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #100228;
+  overflow-x: hidden;
+}
+
+#root{
+  overflow-x: hidden;
+}
+
+.nft-card{
+  background: linear-gradient(102.26deg, #1C0643 0%, #2C0D62 100%);
 }
