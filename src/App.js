@@ -9,12 +9,12 @@ function App() {
      <div className="relative z-30">
       <Header/>
 
-      <div className="px-5 relative max-w-[1350px] mx-auto min-h-screen flex items-center justify-center flex-col">
+      <div className="px-5 relative max-w-[1350px] mx-auto min-h-[600px] 2lg:min-h-screen flex items-center justify-center flex-col mb-[100px] 2lg:mb-0">
         <img src="/images/logo.svg" className='w-[500px]' alt="logo" />
         <div className='max-w-[500px] mx-auto text-center text-[17px] tracking-wide mt-5'>An Immersive MMORPG integrating RADIX'S DLT, with an NFT collection of 10,000 members</div>
         <button><img src="/images/playgame-button.svg" className='mt-10' alt="play game" /></button>
-        <img src="/images/planets.svg" className='absolute top-0 right-0' alt="planets" />
-        <img src="/images/cat-plane.svg" className='absolute bottom-20 left-0 w-[350px]' alt="planets" />
+        <img src="/images/planets.svg" className='absolute top-0 right-0 w-[150px] 2lg:w-[200px] 4lg:w-[300px] 3lg:w-auto' alt="planets" />
+        <img src="/images/cat-plane.svg" className='absolute -bottom-10 2lg:bottom-20 left-0 w-[200px] 4lg:w-[300px] 3lg:w-[350px]' alt="planets" />
       </div>
 
 

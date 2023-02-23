@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 const Header = () => {
-  const [menu, setmenu] = useState(true);
+  const [menu, setmenu] = useState(false);
 
   return (
     <>
@@ -31,7 +31,7 @@ const Header = () => {
 
 
 
-      <div className={`bg-[#0C0929] border-l-2 border-[#2E56CB] transition fixed top-0 right-0 w-[50%] min-h-screen px-3 pt-10 z-50 flex flex-col gap-3 ${menu === true ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`bg-[#0C0929] border-l-2 border-[#2E56CB] transition fixed top-0 right-0 w-[70%] sm:w-[50%] min-h-screen px-5 pt-10 z-50 flex flex-col gap-3 ${menu === true ? "translate-x-0" : "translate-x-full"}`}>
         <a href="#" className='text-[18px]'>Home</a>
         <a href="#" className='text-[18px] text-[#C0C0CC]'>Game</a>
         <a href="#" className='text-[18px] text-[#C0C0CC]'>Features</a>
