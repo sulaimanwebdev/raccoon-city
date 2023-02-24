@@ -10,7 +10,7 @@ function App() {
     setTimeout(() => {
       setloader("opacity-0 invisible");
       document.body.classList.remove("overflow-hidden");
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (
