@@ -3,8 +3,8 @@ import React from 'react'
 const NFTCard = () => {
   return (
     <>
-     <div className='nft-card cursor-pointer flex items-center gap-5 rounded-[8px] p-5'>
-          <div className="relative flex items-center justify-center w-[180px] h-[165px]">
+     <div className='nft-card cursor-pointer flex 2sm:items-center flex-col 2sm:flex-row gap-5 rounded-[8px] p-5'>
+          <div className="relative flex items-center justify-center w-full 2sm:w-[180px] h-[165px]">
             <img src="/images/nft.svg" className='relative z-20' alt="nft" />
             <img src="/images/border.svg" className='absolute top-0 left-0 w-full h-full' alt="border" />
           </div>
