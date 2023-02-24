@@ -21,7 +21,7 @@ function App() {
             <div className="preloader-inner relative">
                 <div className="preloader-circle"></div>
                 <div className="preloader-img pere-text">
-                    <img src="http://raccooncity.online/assets/img/logo/loder.png" alt=""/>
+                    <img src="images/loader.png" alt="logo"/>
                 </div>
             </div>
         </div>
