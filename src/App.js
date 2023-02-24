@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import './fonts/ClashGrotesk-Light.otf';
 import Header from './components/Header';
 import NFTCard from './components/NFT-Card';
-
+import Fade from 'react-reveal/Fade';
 function App() {
   const [loader, setloader] = useState("opacity-100 visible");
 
@@ -37,8 +37,8 @@ function App() {
         <img src="/images/logo.svg" className='w-[500px]' alt="logo" />
         <div className='max-w-[500px] mx-auto text-center text-[17px] tracking-wide mt-5'>An Immersive MMORPG integrating RADIX'S DLT, with an NFT collection of 10,000 members</div>
         <button><img src="/images/playgame-button.svg" className='mt-10' alt="play game" /></button>
-        <img src="/images/planets.svg" className='absolute top-0 right-0 w-[150px] 2lg:w-[200px] 4lg:w-[300px] 3lg:w-auto' alt="planets" />
-        <img src="/images/cat-plane.svg" className='absolute -bottom-10 2lg:bottom-20 left-0 w-[200px] 4lg:w-[300px] 3lg:w-[350px]' alt="planets" />
+        <img src="/images/planets.svg" className='animationCont absolute top-0 right-0 w-[150px] 2lg:w-[200px] 4lg:w-[300px] 3lg:w-auto' alt="planets" />
+        <img src="/images/cat-plane.svg" className='spaceShip absolute -bottom-10 2lg:bottom-20 left-0 w-[200px] 4lg:w-[300px] 3lg:w-[350px]' alt="planets" />
       </div>
 
 
@@ -52,36 +52,42 @@ function App() {
 
      <div className="px-5 relative max-w-[1350px] mx-auto mt-[150px] sm:mt-[220px]">
       <div className="relative z-30">
+        <Fade bottom>
         <div className="relative flex items-center justify-center flex-col text-center">
           <img src="/images/illustration1.svg" alt="raccoon" />
           <div className="text-[#55DBD6] text-[19px] tracking-wide mt-3">Strategize your next move and dominate the game</div>
           <div className="my-1 font-[ClashDisplay-Semibold] text-[35px] sm:text-[40px]">Endless quests and thrilling challenges</div>
           <div className="text-[19px] font-[Light] mt-3 tracking-wide max-w-[700px] mx-auto">Are you ready to dive into a world of adventure and endless possibilities? Our MMORPG game is waiting for you! With endless quests, exciting battles, and thrilling challenges, our game offers an experience unlike any other.</div>
         </div>
+        </Fade>
 
-
+        <Fade bottom>
         <div className="relative flex items-center justify-center flex-col text-center mt-[100px] sm:mt-[150px]">
           <img src="/images/illustration2.svg" alt="raccoon" />
           <div className="text-[#55DBD6] text-[19px] tracking-wide mt-7">Compete with other players in exciting PvP battles</div>
           <div className="my-1 font-[ClashDisplay-Semibold] text-[35px] sm:text-[40px]">Online PVP Battles</div>
           <div className="text-[19px] font-[Light] mt-3 tracking-wide max-w-[700px] mx-auto">Compete with other players in exciting PvP battles or team up with friends to take on powerful bosses. The game features stunning graphics and an immersive soundtrack that will transport you to a whole new world.</div>
         </div>
+        </Fade>
 
 
-
+        <Fade bottom>
         <div className="relative flex items-center justify-center flex-col text-center mt-[100px] sm:mt-[150px]">
           <img src="/images/illustration3.svg" alt="raccoon" />
           <div className="text-[#55DBD6] text-[19px] tracking-wide sm:mt-3">Join a community of players from around the world</div>
           <div className="my-1 font-[ClashDisplay-Semibold] text-[35px] sm:text-[40px]">BEST COMMUNITY SUPPORT</div>
           <div className="text-[19px] font-[Light] mt-3 tracking-wide max-w-[700px] mx-auto">Join a community of players from around the world and embark on epic journeys together. Choose your character, customize your abilities, and explore a vast and detailed world full of hidden treasures and secrets to uncover.</div>
         </div>
+        </Fade>
 
 
       </div>
      <img src="/images/background3.svg" className='absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-full object-cover object-center' alt="background" />
-     <img src="/images/planet1.svg" className='hidden 5lg:flex absolute -top-[100px] left-0' alt="planet" />
-     <img src="/images/planet2.svg" className='hidden 5lg:flex absolute top-1/2 -translate-y-1/2 right-0' alt="planet" />
+     <img src="/images/planet1.svg" className='animationCont hidden 5lg:flex absolute -top-[100px] left-0' alt="planet" />
+     <img src="/images/planet2.svg" className='animationCont hidden 5lg:flex absolute top-1/2 -translate-y-1/2 right-0' alt="planet" />
+     <Fade left>
      <img src="/images/cat-plane.svg" className='hidden 5lg:flex absolute bottom-0 left-0 w-[260px]' alt="cat plane" />
+     </Fade>
      </div>
 
 
@@ -94,6 +100,7 @@ function App() {
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-white"></div>
        </div>
 
+       <Fade left>
        <div className="grid grid-cols-1 4lg:grid-cols-2 gap-5">
           <NFTCard/>
           <NFTCard/>
@@ -102,6 +109,7 @@ function App() {
           <NFTCard/>
           <NFTCard/>
        </div>
+      </Fade>
 
        <a href="/" className="flex items-center gap-2.5 float-right mt-5">
         <div className="border-b border-white text-[19px]">Explore NFT Marketplace</div> 
@@ -110,7 +118,7 @@ function App() {
      </div>
 
 
-     <div className="relative px-5 max-w-[1350px] mx-auto h-[200px] mt-[130px] sm:mt-[170px]"><img src="/images/planet3.svg" className='absolute top-0 left-0' alt="planet" /></div>
+     <div className="animationCont relative px-5 max-w-[1350px] mx-auto h-[200px] mt-[130px] sm:mt-[170px]"><img src="/images/planet3.svg" className='absolute top-0 left-0' alt="planet" /></div>
      
      <img src="/images/background4.svg" className='w-full' alt="background" />
 
