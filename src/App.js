@@ -1,10 +1,34 @@
+import {useState, useEffect} from 'react';
 import './fonts/ClashGrotesk-Light.otf';
 import Header from './components/Header';
 import NFTCard from './components/NFT-Card';
 
 function App() {
+  const [loader, setloader] = useState("opacity-100 visible");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setloader("opacity-0 invisible");
+      document.body.classList.remove("overflow-hidden");
+    }, 2000);
+  }, []);
+
   return (
     <>
+
+<div id="preloader-main" className={`transition ${loader}`}>
+        <div className="preloader flex items-center justify-center">
+            <div className="preloader-inner relative">
+                <div className="preloader-circle"></div>
+                <div className="preloader-img pere-text">
+                    <img src="http://raccooncity.online/assets/img/logo/loder.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div className='relative font-[Regular] text-white'>
      <div className="relative z-30">
       <Header/>
