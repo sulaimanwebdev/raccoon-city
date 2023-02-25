@@ -118,13 +118,13 @@ function App() {
      </div>
 
 
-     <div className="animationCont relative px-5 max-w-[1350px] mx-auto h-[200px] mt-[130px] sm:mt-[170px]"><img src="/images/planet3.svg" className='absolute top-0 left-0' alt="planet" /></div>
+     <div className="animationCont relative px-5 max-w-[1350px] mx-auto h-[100px] mt-[130px] lg:mt-[170px]"><img src="/images/planet3.svg" className='absolute top-0 left-0 w-[160px] sm:w-[200px] lg:w-auto -mt-12 sm:mt-0' alt="planet" /></div>
      
-     <img src="/images/background4.svg" className='w-full' alt="background" />
+     <img src="/images/raccoon.svg" className='w-full' alt="background" />
 
-     <div className="bg-[#100228] px-5 max-w-[1350px] mx-auto py-5 flex 2md:items-center 2md:justify-between flex-col 2md:flex-row gap-3">
-       <div className='text-[17px]'>2023 © Raccoon City. All Rights Reserved.</div>
-       <div className="flex sm:items-center flex-col sm:flex-row gap-7 mt-2 sm:mt-0">
+     <div className="bg-[#100228] px-5 max-w-[1350px] mx-auto py-5 flex items-center justify-center 2md:justify-between flex-col 2md:flex-row gap-3">
+       <div className='text-[17px] text-center 2md:text-left'>2023 © Raccoon City. All Rights Reserved.</div>
+       <div className="hidden 2md:flex sm:items-center flex-col sm:flex-row gap-7 mt-2 sm:mt-0">
         <a href="#" className='text-[17px]'>About</a>
         <a href="#" className='text-[17px]'>Teams</a>
         <a href="#" className='text-[17px]'>Governance</a>
